@@ -368,14 +368,15 @@ Django = ">=1.11"
 
 [[package]]
 name = "djangorestframework"
-version = "3.12.4"
+version = "3.13.1"
 description = "Web APIs for Django, made easy."
 category = "main"
 optional = false
-python-versions = ">=3.5"
+python-versions = ">=3.6"
 
 [package.dependencies]
 django = ">=2.2"
+pytz = "*"
 
 [[package]]
 name = "djangorestframework-camel-case"
@@ -969,11 +970,11 @@ pbr = ">=2.0.0,<2.1.0 || >2.1.0"
 
 [[package]]
 name = "tablib"
-version = "3.1.0"
+version = "3.2.0"
 description = "Format agnostic tabular data library (XLS, JSON, YAML, CSV)"
 category = "main"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 
 [package.dependencies]
 openpyxl = {version = ">=2.6.0", optional = true, markers = "extra == \"xlsx\""}
@@ -1303,8 +1304,8 @@ django-vite = [
     {file = "django_vite-1.2.1-py3-none-any.whl", hash = "sha256:68332226cb72b9a3b8d4c155926dbbcd83b5855380a0776baed7280ef15e2185"},
 ]
 djangorestframework = [
-    {file = "djangorestframework-3.12.4-py3-none-any.whl", hash = "sha256:6d1d59f623a5ad0509fe0d6bfe93cbdfe17b8116ebc8eda86d45f6e16e819aaf"},
-    {file = "djangorestframework-3.12.4.tar.gz", hash = "sha256:f747949a8ddac876e879190df194b925c177cdeb725a099db1460872f7c0a7f2"},
+    {file = "djangorestframework-3.13.1-py3-none-any.whl", hash = "sha256:24c4bf58ed7e85d1fe4ba250ab2da926d263cd57d64b03e8dcef0ac683f8b1aa"},
+    {file = "djangorestframework-3.13.1.tar.gz", hash = "sha256:0c33407ce23acc68eca2a6e46424b008c9c02eceb8cf18581921d0092bc1f2ee"},
 ]
 djangorestframework-camel-case = [
     {file = "djangorestframework-camel-case-1.2.0.tar.gz", hash = "sha256:9714d43fba5bb654057c29501649684d3d9f11a92319ae417fd4d65e80d1159d"},
@@ -1617,8 +1618,8 @@ stevedore = [
     {file = "stevedore-3.5.0.tar.gz", hash = "sha256:f40253887d8712eaa2bb0ea3830374416736dc8ec0e22f5a65092c1174c44335"},
 ]
 tablib = [
-    {file = "tablib-3.1.0-py3-none-any.whl", hash = "sha256:26141c9cf2d5904a2228d3f5d45f8a46a3f3f2f0fbb4c33b4a1c1ddca9f31348"},
-    {file = "tablib-3.1.0.tar.gz", hash = "sha256:d64c9f6712918a3d90ec5d71b44b8bab1083e3609e4844ad2be80eb633e097ed"},
+    {file = "tablib-3.2.0-py3-none-any.whl", hash = "sha256:1ba12da7b0b17e33f5997fb1bc8ed560aae3535f5892ae5e5c01a056c47d4d78"},
+    {file = "tablib-3.2.0.tar.gz", hash = "sha256:12d8686454c721de88d8ca5adf07e1f419ef6dbcecedf65e8950d4a329daf3a0"},
 ]
 telepath = [
     {file = "telepath-0.2-py35-none-any.whl", hash = "sha256:801615094d3d964e178183099bf04020f4ff9c84ec43945d40b096df0a5767ee"},
