@@ -335,7 +335,7 @@ sftp = ["paramiko"]
 
 [[package]]
 name = "django-taggit"
-version = "1.5.1"
+version = "2.1.0"
 description = "django-taggit is a reusable Django application for simple tagging."
 category = "main"
 optional = false
@@ -969,11 +969,11 @@ pbr = ">=2.0.0,<2.1.0 || >2.1.0"
 
 [[package]]
 name = "tablib"
-version = "3.1.0"
+version = "3.2.0"
 description = "Format agnostic tabular data library (XLS, JSON, YAML, CSV)"
 category = "main"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 
 [package.dependencies]
 openpyxl = {version = ">=2.6.0", optional = true, markers = "extra == \"xlsx\""}
@@ -1094,25 +1094,25 @@ testing = ["coverage (>=4)", "coverage-enable-subprocess (>=1)", "flaky (>=3)", 
 
 [[package]]
 name = "wagtail"
-version = "2.15.1"
+version = "2.16.1"
 description = "A Django content management system."
 category = "main"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 
 [package.dependencies]
 anyascii = ">=0.1.5"
 beautifulsoup4 = ">=4.8,<4.10"
-Django = ">=3.0,<3.3"
+Django = ">=3.2,<4.1"
 django-filter = ">=2.2,<22"
 django-modelcluster = ">=5.2,<6.0"
-django-taggit = ">=1.0,<2.0"
+django-taggit = ">=2.0,<3.0"
 django-treebeard = ">=4.2.0,<4.5 || >4.5,<5.0"
 djangorestframework = ">=3.11.1,<4.0"
 draftjs-exporter = ">=2.1.5,<3.0"
 html5lib = ">=0.999,<2"
 l18n = ">=2018.5"
-Pillow = ">=4.0.0,<9.0.0"
+Pillow = ">=4.0.0,<10.0.0"
 requests = ">=2.11.1,<3.0"
 tablib = {version = ">=0.14.0", extras = ["xls", "xlsx"]}
 telepath = ">=0.1.1,<1"
@@ -1121,7 +1121,7 @@ xlsxwriter = ">=1.2.8,<4.0"
 
 [package.extras]
 docs = ["pyenchant (>=3.1.1,<4)", "sphinxcontrib-spelling (>=5.4.0,<6)", "Sphinx (>=1.5.2)", "sphinx-autobuild (>=0.6.0)", "sphinx-wagtail-theme (==5.0.4)", "recommonmark (>=0.7.1)"]
-testing = ["python-dateutil (>=2.7)", "pytz (>=2014.7)", "elasticsearch (>=5.0,<6.0)", "Jinja2 (>=2.11,<3.0)", "boto3 (>=1.16,<1.17)", "freezegun (>=0.3.8)", "openpyxl (>=2.6.4)", "Unidecode (>=0.04.14,<2.0)", "coverage (>=3.7.0)", "flake8 (>=3.6.0)", "isort (==5.6.4)", "flake8-blind-except (==0.1.1)", "flake8-print (==2.0.2)", "doc8 (==0.8.1)", "jinjalint (>=0.5)", "docutils (==0.15)", "django-taggit (>=1.3.0,<2.0)", "polib (>=1.1,<2.0)"]
+testing = ["python-dateutil (>=2.7)", "pytz (>=2014.7)", "elasticsearch (>=5.0,<6.0)", "Jinja2 (>=2.11,<3.0)", "boto3 (>=1.16,<1.17)", "freezegun (>=0.3.8)", "openpyxl (>=2.6.4)", "Unidecode (>=0.04.14,<2.0)", "azure-mgmt-cdn (>=5.1,<6.0)", "azure-mgmt-frontdoor (>=0.3,<0.4)", "coverage (>=3.7.0)", "flake8 (>=3.6.0)", "isort (==5.6.4)", "flake8-blind-except (==0.1.1)", "flake8-print (==2.0.2)", "doc8 (==0.8.1)", "jinjalint (>=0.5)", "docutils (==0.15)", "polib (>=1.1,<2.0)"]
 
 [[package]]
 name = "webencodings"
@@ -1179,7 +1179,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "9bd4d1be950742bce927a88d68fbd506f62faff4a02cbbe4fa7eef35696f3920"
+content-hash = "ad185f24f509bb3bfbd506021df76f273b7f761917087812dee5fe4b609a1522"
 
 [metadata.files]
 anyascii = [
@@ -1291,8 +1291,8 @@ django-storages = [
     {file = "django_storages-1.12.3-py3-none-any.whl", hash = "sha256:204a99f218b747c46edbfeeb1310d357f83f90fa6a6024d8d0a3f422570cee84"},
 ]
 django-taggit = [
-    {file = "django-taggit-1.5.1.tar.gz", hash = "sha256:e5bb62891f458d55332e36a32e19c08d20142c43f74bc5656c803f8af25c084a"},
-    {file = "django_taggit-1.5.1-py3-none-any.whl", hash = "sha256:dfe9e9c10b5929132041de0c00093ef0072c73c2a97d0f74a818ae50fa77149a"},
+    {file = "django-taggit-2.1.0.tar.gz", hash = "sha256:a9f41e4ad58efe4b28d86f274728ee87eb98eeae90c9eb4b4efad39e5068184e"},
+    {file = "django_taggit-2.1.0-py3-none-any.whl", hash = "sha256:61547a23fc99967c9304107414a09e662b459f4163dbbae32e60b8ba40c34d05"},
 ]
 django-treebeard = [
     {file = "django-treebeard-4.5.1.tar.gz", hash = "sha256:80150017725239702054e5fa64dc66e383dc13ac262c8d47ee5a82cb005969da"},
@@ -1617,8 +1617,8 @@ stevedore = [
     {file = "stevedore-3.5.0.tar.gz", hash = "sha256:f40253887d8712eaa2bb0ea3830374416736dc8ec0e22f5a65092c1174c44335"},
 ]
 tablib = [
-    {file = "tablib-3.1.0-py3-none-any.whl", hash = "sha256:26141c9cf2d5904a2228d3f5d45f8a46a3f3f2f0fbb4c33b4a1c1ddca9f31348"},
-    {file = "tablib-3.1.0.tar.gz", hash = "sha256:d64c9f6712918a3d90ec5d71b44b8bab1083e3609e4844ad2be80eb633e097ed"},
+    {file = "tablib-3.2.0-py3-none-any.whl", hash = "sha256:1ba12da7b0b17e33f5997fb1bc8ed560aae3535f5892ae5e5c01a056c47d4d78"},
+    {file = "tablib-3.2.0.tar.gz", hash = "sha256:12d8686454c721de88d8ca5adf07e1f419ef6dbcecedf65e8950d4a329daf3a0"},
 ]
 telepath = [
     {file = "telepath-0.2-py35-none-any.whl", hash = "sha256:801615094d3d964e178183099bf04020f4ff9c84ec43945d40b096df0a5767ee"},
@@ -1696,8 +1696,8 @@ virtualenv = [
     {file = "virtualenv-20.10.0.tar.gz", hash = "sha256:576d05b46eace16a9c348085f7d0dc8ef28713a2cabaa1cf0aea41e8f12c9218"},
 ]
 wagtail = [
-    {file = "wagtail-2.15.1-py3-none-any.whl", hash = "sha256:6f1bc7960a7028a6e665a0f5a15ef2ba89faad66060bc4b3952a922fbef1713b"},
-    {file = "wagtail-2.15.1.tar.gz", hash = "sha256:97eb520db0056d576b698e832de2ecfa3d795e9ed12e4b9ab738623c1b6277a0"},
+    {file = "wagtail-2.16.1-py3-none-any.whl", hash = "sha256:129bb91c422e5c2b3603ebc67e9c392541cb564e55a5b864881905ca246a2c4e"},
+    {file = "wagtail-2.16.1.tar.gz", hash = "sha256:53dbd62a93da97c4ef6982652a103ab9be5bfe03f34cf5bc796c5d716b9020e8"},
 ]
 webencodings = [
     {file = "webencodings-0.5.1-py2.py3-none-any.whl", hash = "sha256:a0af1213f3c2226497a97e2b3aa01a7e4bee4f403f95be16fc9acd2947514a78"},
