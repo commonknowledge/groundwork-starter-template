@@ -9,6 +9,5 @@
   "jest.autoRun": "off",
   "[django-html]": {
     "editor.formatOnSave": false
-  },
-  "python.pythonPath": "/home/vscode/.cache/pypoetry/virtualenvs/app-xS3fZVNL-py3.9/bin/python"
+  }
 }

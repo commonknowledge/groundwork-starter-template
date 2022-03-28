@@ -6,22 +6,6 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import include, path
 from django.views.generic import TemplateView
 
-map = {
-    "layer": {
-        "id": "terrain-data",
-        "type": "line",
-        "source": "mapbox-terrain",
-        "source-layer": "contour",
-        "layout": {"line-join": "round", "line-cap": "round"},
-        "paint": {"line-color": "#ff69b4", "line-width": 1},
-    },
-    "data": {
-        "type": "vector",
-        "url": "mapbox://mapbox.mapbox-terrain-v2",
-    },
-}
-
-
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("__debug__/", include(debug_toolbar.urls)),

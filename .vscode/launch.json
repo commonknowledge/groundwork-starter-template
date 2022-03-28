@@ -6,7 +6,7 @@
   "compounds": [
     {
       "name": "Start App",
-      "configurations": ["django-runserver", "django-livereload", "vite-dev"],
+      "configurations": ["django-livereload", "vite-dev", "django-runserver"],
       "presentation": {
         "hidden": false,
         "group": "",

@@ -3,17 +3,6 @@ SHELL := /usr/bin/env bash
 PYTHON := python
 
 
-#* Poetry
-
-.PHONY: poetry-download
-poetry-download:
-	curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | $(PYTHON) -
-
-.PHONY: poetry-remove
-poetry-remove:
-	curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | $(PYTHON) - --uninstall
-
-
 #* Installation
 
 .PHONY: install
@@ -30,9 +19,8 @@ migrate:
 	poetry run python manage.py migrate
 
 .PHONY: bootstrap
-bootstrap: poetry-download install pre-commit-install migrate
+bootstrap: install pre-commit-install migrate
 	touch app/settings/local.py
-
 
 #* Formatters
 
@@ -85,8 +73,7 @@ build:
 	SECRET_KEY=dummy poetry run python manage.py collectstatic --noinput --clear
 
 .PHONY: release
-release:
-	poetry run python manage.py migrate
+	release: migrate
 
 
 #* Cleaning

@@ -11,7 +11,7 @@ export default defineConfig(() => {
       entries: Object.values(BUNDLE_ENTRYPOINTS),
     },
     build: {
-      mainifest: true,
+      manifest: true,
       emptyOutDir: true,
       rollupOptions: {
         output: {
