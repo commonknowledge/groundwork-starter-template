@@ -1,1 +1,1 @@
-export default "file-contents"
+export default "file-contents";
