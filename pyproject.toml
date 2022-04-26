@@ -13,35 +13,35 @@ authors = []
 python = "^3.9"
 typer = {extras = ["all"], version = "^0.3.2"}
 
-boto3 = '>=1.17.77'
-botocore = '>=1.20.77'
-requests = '>=2.25.1'
-rich = "^10.7.0"
-django = '^4.0.2'
-django-anymail = '>=8.3'
-django-filter = '>=2.4.0'
-djangorestframework = '>=3.12.4'
-django-vite = "^1.2.1"
-dj-database-url = '>=0.5.0'
+boto3 = '*'
+botocore = '*'
+requests = '*'
+rich = "*"
+django = '*'
+django-anymail = '*'
+django-filter = '*'
+djangorestframework = '*'
+django-vite = "*"
+dj-database-url = '*'
 django-storages = "*"
-groundwork-django = '>=0.1.0'
-gunicorn = '>=20.1.0'
-psycopg2 = '>=2.8.6'
+groundwork-django = '*'
+gunicorn = '>*'
+psycopg2 = '*'
 
 [tool.poetry.dev-dependencies]
-bandit = "^1.7.0"
-black = {version = "^21.7b0", allow-prereleases = true}
-darglint = "^1.8.0"
+bandit = "*"
+black = {version = "*", allow-prereleases = true}
+darglint = "*"
 django-debug-toolbar = "*"
-django-livereload-server = "^0.3.2"
-isort = {extras = ["colors"], version = "^5.9.3"}
-pre-commit = "^2.14.0"
-pylint = "^2.10.2"
-pydocstyle = "^6.1.1"
-pytest = "^6.2.4"
-pytest-django = "^4.4.0"
-pyupgrade = "^2.24.0"
-safety = "^1.10.3"
+django-livereload-server = "*"
+isort = {extras = ["colors"], version = "*"}
+pre-commit = "*"
+pylint = "*"
+pydocstyle = "*"
+pytest = "*"
+pytest-django = "*"
+pyupgrade = "*"
+safety = "*"
 
 [tool.black]
 # https://github.com/psf/black
