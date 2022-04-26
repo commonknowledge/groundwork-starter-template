@@ -40,7 +40,7 @@ formatting: codestyle
 .PHONY: test
 test:
 	poetry run pytest -vs -m "not integration_test"
-	yarn test
+	yarn test --passWithNoTests
 
 .PHONY: check-codestyle
 check-codestyle:
@@ -61,7 +61,7 @@ lint: check-codestyle check-safety test
 .PHONY: ci
 ci: lint
 	poetry run pytest
-	yarn test
+	yarn test --passWithNoTests
 
 
 #* Assets
