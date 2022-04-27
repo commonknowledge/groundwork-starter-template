@@ -6,8 +6,9 @@ DEBUG = False
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 if os.getenv("BASE_URL"):
+    CSRF_TRUSTED_ORIGINS = [os.getenv("BASE_URL")]
     BASE_URL = re.sub(r"/$", "", os.getenv("BASE_URL"))
-    ALLOWED_HOSTS = [urlparse(BASE_URL).netloc]
+    ALLOWED_HOSTS = [os.getenv("ALLOWED_HOSTS") or urlparse(BASE_URL).netloc]
 else:
     BASE_URL = ""
     ALLOWED_HOSTS = ["*"]
@@ -24,7 +25,7 @@ if os.getenv("AWS_S3_REGION_NAME"):
     MEDIA_URL = os.getenv("MEDIA_URL")
 else:
     MEDIA_ROOT = os.getenv(MEDIA_ROOT)
-    MEDIA_URL = os.getenv("MEDIA_URL", "/media")
+    MEDIA_URL = os.getenv("MEDIA_URL", "/media/")
 
 if os.getenv("MAILGUN_API_URL"):
     ANYMAIL = {

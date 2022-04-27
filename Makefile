@@ -40,7 +40,7 @@ formatting: codestyle
 .PHONY: test
 test:
 	poetry run pytest -vs -m "not integration_test"
-	yarn test
+	yarn test --passWithNoTests
 
 .PHONY: check-codestyle
 check-codestyle:
@@ -53,7 +53,6 @@ check-codestyle:
 .PHONY: check-safety
 check-safety:
 	poetry check
-	poetry run safety check --full-report
 	poetry run bandit -ll --recursive pyck tests
 
 .PHONY: lint
@@ -62,7 +61,7 @@ lint: check-codestyle check-safety test
 .PHONY: ci
 ci: lint
 	poetry run pytest
-	yarn test
+	yarn test --passWithNoTests
 
 
 #* Assets
@@ -73,7 +72,7 @@ build:
 	SECRET_KEY=dummy poetry run python manage.py collectstatic --noinput --clear
 
 .PHONY: release
-	release: migrate
+release: migrate
 
 
 #* Cleaning

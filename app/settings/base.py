@@ -7,10 +7,6 @@ PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -67,7 +63,6 @@ WSGI_APPLICATION = "app.wsgi.application"
 
 
 # Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASE_URL = os.getenv("DATABASE_URL")
 
@@ -81,7 +76,6 @@ if DATABASE_URL:
     }
 
 # Password validation
-# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -102,7 +96,6 @@ AUTH_USER_MODEL = "app.User"
 
 
 # Internationalization
-# https://docs.djangoproject.com/en/3.2/topics/i18n/
 
 LANGUAGE_CODE = "en-gb"
 
@@ -116,7 +109,6 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.FileSystemFinder",
@@ -125,14 +117,14 @@ STATICFILES_FINDERS = [
 
 
 DJANGO_VITE_ASSETS_PATH = BASE_DIR + "/dist"
-DJANGO_VITE_MANIFEST_PATH = DJANGO_VITE_ASSETS_PATH + "/manifest.json"
+DJANGO_VITE_MANIFEST_PATH = DJANGO_VITE_ASSETS_PATH + "bundle/manifest.json"
 
 STATICFILES_DIRS = [DJANGO_VITE_ASSETS_PATH]
 
 
 # ManifestStaticFilesStorage is recommended in production, to prevent outdated
 # JavaScript / CSS assets being served from cache (e.g. after a Wagtail upgrade).
-# See https://docs.djangoproject.com/en/3.2/ref/contrib/staticfiles/#manifeststaticfilesstorage
+
 STATICFILES_STORAGE = "django.contrib.staticfiles.storage.ManifestStaticFilesStorage"
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static")

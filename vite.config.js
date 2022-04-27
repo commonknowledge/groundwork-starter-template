@@ -6,7 +6,7 @@ const BUNDLE_ENTRYPOINTS = {
 
 export default defineConfig(() => {
   return {
-    base: "/static/",
+    base: "/static/bundle/",
     optimizeDeps: {
       entries: Object.values(BUNDLE_ENTRYPOINTS),
     },
@@ -15,7 +15,7 @@ export default defineConfig(() => {
       emptyOutDir: true,
       rollupOptions: {
         output: {
-          dir: "dist/",
+          dir: "dist/bundle/",
         },
         input: BUNDLE_ENTRYPOINTS,
       },
