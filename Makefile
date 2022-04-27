@@ -72,7 +72,7 @@ build:
 	SECRET_KEY=dummy poetry run python manage.py collectstatic --noinput --clear
 
 .PHONY: release
-	release: migrate
+release: migrate
 
 
 #* Cleaning
