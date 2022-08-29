@@ -2242,10 +2242,10 @@ graceful-fs@^4.2.4:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.8.tgz#e412b8d33f5e006593cbd3cee6df9f2cebbe802a"
   integrity sha512-qkIilPUYcNhJpd33n0GBXTB1MMPp14TxEsEs0pTrsSVucApsYzW5V+Q8Qxhik6KU3evy+qkAAowTByymK0avdg==
 
-groundwork-django@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/groundwork-django/-/groundwork-django-0.1.2.tgz#9f6f4da7fb3eb4ca752a55f3f65d0176ae3162b3"
-  integrity sha512-5FKEh5xXTaz4Bk7c6Pg5b+iYufMgZIBzXKJO3cOjQfcn8aUkwXx6HDFYkT4AsVE8l4ttnHY3IuwuRMxNaC+44g==
+groundwork-django@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/groundwork-django/-/groundwork-django-0.1.4.tgz#78cb33351ccc87ac61b58427dfa576d3934ad526"
+  integrity sha512-csvPX8Ov6iQWUn0GvWuh7iO9eT30riPhXBR4l+EescSlKQh7G4gkYLtrYTqUDaXG41ykWjGHCceJ74TXz/1zHA==
 
 has-ansi@^2.0.0:
   version "2.0.0"
